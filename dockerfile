@@ -5,7 +5,9 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-COPY . /app
+COPY even_torus.py /app/even_torus.py
+COPY odd_torus.py /app/odd_torus.py
+COPY regular_board.py /app/regular_board.py
 
 RUN pip install gekko
 
