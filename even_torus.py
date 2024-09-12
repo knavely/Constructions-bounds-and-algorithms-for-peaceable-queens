@@ -70,3 +70,10 @@ print("*****")
 print("Theorem 1.2 t(n_even) <= ", z[0][0],"n^2") 
 print("*****")
 print("")
+
+
+print("***** Validating UPPER BOUND *****")
+try:
+    m.Equation(z[0] > 0.14014)
+    m.solve()
+except: print("better solution does not exist")

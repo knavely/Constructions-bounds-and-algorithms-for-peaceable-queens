@@ -39,3 +39,9 @@ print("Theorem 1.4 t(n_odd) <= ", z[0][0],"n^2")
 print("*****")
 print("")
 #RD,RA, BD, BA for even
+
+print("***** Validating UPPER BOUND *****")
+try:
+    m.Equation(z[0] > 0.1254)
+    m.solve()
+except: print("better solution not found")
