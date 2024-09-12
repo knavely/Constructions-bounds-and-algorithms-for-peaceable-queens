@@ -54,20 +54,22 @@ m.options.SOLVER=1
 m.solve()
 
 
-print("*****")
-print("Theorem 1.5 a(n) <= ", z[0][0],"n^2") 
-print("*****")
-print("")
 
-
+objective = z[0][0]
 print("*****")
-print("Validating no better  upper bound is feasible....") 
+print("Validating better  upper bound is feasible....") 
 print("*****")
 print("")
 try:
     m.Equation(z[0] > 0.172)    
     m.solve()
-except: print("better upper bound beyond numeric error is infeasible")
+except:
+    print("better upper bound beyond numeric error is infeasible")
+    print("*****")
+    print("Theorem 1.5 a(n) <= ", z[0][0],"n^2") 
+    print("*****")
+    print("")
+
 
 def printsol(sol,name):
     for i in range(64):

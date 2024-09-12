@@ -66,14 +66,15 @@ m.Equation(z[3 | 2**4 | 2**5 ] + z[3 | 2**2 | 2**3 ] >= z[0])
 m.Maximize(z[0])
 m.options.SOLVER=3 #IPOPT
 m.solve()
-print("*****")
-print("Theorem 1.2 t(n_even) <= ", z[0][0],"n^2") 
-print("*****")
-print("")
 
-
+objective = z[0][0]
 print("***** Validating UPPER BOUND *****")
 try:
     m.Equation(z[0] > 0.14014)
     m.solve()
-except: print("better solution does not exist")
+except:
+    print("better solution does not exist \n")
+    print("*****")
+    print("Theorem 1.2 t(n_even) <= ", z[0][0],"n^2") 
+    print("*****")
+    print("")
