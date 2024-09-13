@@ -1,12 +1,12 @@
 Solve ODD TORUS UPPER BOUND, for Theorem 1.4 
 
-apm 128.120.241.218_gk_model0 <br><pre> ----------------------------------------------------------------
+apm 169.237.79.75_gk_model0 <br><pre> ----------------------------------------------------------------
  APMonitor, Version 1.0.3
  APMonitor Optimization Suite
  ----------------------------------------------------------------
  
  
- Warning: there is insufficient data in CSV file 128.120.241.218_gk_model0.csv
+ Warning: there is insufficient data in CSV file 169.237.79.75_gk_model0.csv
  
  --------- APM Model Size ------------
  Each time step contains
@@ -87,8 +87,8 @@ Number of inequality constraint evaluations          = 0
 Number of equality constraint Jacobian evaluations   = 14
 Number of inequality constraint Jacobian evaluations = 0
 Number of Lagrangian Hessian evaluations             = 13
-Total CPU secs in IPOPT (w/o function evaluations)   =      0.008
-Total CPU secs in NLP function evaluations           =      0.001
+Total CPU secs in IPOPT (w/o function evaluations)   =      0.010
+Total CPU secs in NLP function evaluations           =      0.002
 
 EXIT: Optimal Solution Found.
  
@@ -98,22 +98,19 @@ EXIT: Optimal Solution Found.
  
  ---------------------------------------------------
  Solver         :  IPOPT (v3.12)
- Solution time  :   1.879999999073334E-002 sec
+ Solution time  :   1.890000000275904E-002 sec
  Objective      :  -0.124996876496913     
  Successful solution
  ---------------------------------------------------
  
-*****
-Theorem 1.4 t(n_odd) <=  0.1249968765 n^2
-*****
-
-apm 128.120.241.218_gk_model0 <br><pre> ----------------------------------------------------------------
+***** Validating UPPER BOUND *****
+apm 169.237.79.75_gk_model0 <br><pre> ----------------------------------------------------------------
  APMonitor, Version 1.0.3
  APMonitor Optimization Suite
  ----------------------------------------------------------------
  
  
- Warning: there is insufficient data in CSV file 128.120.241.218_gk_model0.csv
+ Warning: there is insufficient data in CSV file 169.237.79.75_gk_model0.csv
  
  --------- APM Model Size ------------
  Each time step contains
@@ -202,7 +199,7 @@ Number of inequality constraint evaluations          = 0
 Number of equality constraint Jacobian evaluations   = 22
 Number of inequality constraint Jacobian evaluations = 0
 Number of Lagrangian Hessian evaluations             = 20
-Total CPU secs in IPOPT (w/o function evaluations)   =      0.017
+Total CPU secs in IPOPT (w/o function evaluations)   =      0.015
 Total CPU secs in NLP function evaluations           =      0.002
 
 EXIT: Converged to a point of local infeasibility. Problem may be infeasible.
@@ -220,16 +217,20 @@ EXIT: Converged to a point of local infeasibility. Problem may be infeasible.
  
  Creating file: infeasibilities.txt
  @error: Solution Not Found
-better solution is infeasible up to numeric error
+better upper bound beyond numeric error is infeasible
+*****
+Theorem 1.4 t(n_odd) <=  0.1249968765 n^2
+*****
+
 Solve EVEN TORUS UPPER BOUND, for Theorem 1.2 
 
-apm 128.120.241.218_gk_model0 <br><pre> ----------------------------------------------------------------
+apm 169.237.79.75_gk_model0 <br><pre> ----------------------------------------------------------------
  APMonitor, Version 1.0.3
  APMonitor Optimization Suite
  ----------------------------------------------------------------
  
  
- Warning: there is insufficient data in CSV file 128.120.241.218_gk_model0.csv
+ Warning: there is insufficient data in CSV file 169.237.79.75_gk_model0.csv
  
  --------- APM Model Size ------------
  Each time step contains
@@ -430,8 +431,8 @@ Number of inequality constraint evaluations          = 0
 Number of equality constraint Jacobian evaluations   = 122
 Number of inequality constraint Jacobian evaluations = 0
 Number of Lagrangian Hessian evaluations             = 120
-Total CPU secs in IPOPT (w/o function evaluations)   =      0.135
-Total CPU secs in NLP function evaluations           =      0.053
+Total CPU secs in IPOPT (w/o function evaluations)   =      0.139
+Total CPU secs in NLP function evaluations           =      0.058
 
 EXIT: Optimal Solution Found.
  
@@ -441,23 +442,19 @@ EXIT: Optimal Solution Found.
  
  ---------------------------------------------------
  Solver         :  IPOPT (v3.12)
- Solution time  :   0.232799999997951      sec
+ Solution time  :   0.230400000000373      sec
  Objective      :  -0.140131542319769     
  Successful solution
  ---------------------------------------------------
  
-*****
-Theorem 1.2 t(n_even) <=  0.14013154232 n^2
-*****
-
 ***** Validating UPPER BOUND *****
-apm 128.120.241.218_gk_model0 <br><pre> ----------------------------------------------------------------
+apm 169.237.79.75_gk_model0 <br><pre> ----------------------------------------------------------------
  APMonitor, Version 1.0.3
  APMonitor Optimization Suite
  ----------------------------------------------------------------
  
  
- Warning: there is insufficient data in CSV file 128.120.241.218_gk_model0.csv
+ Warning: there is insufficient data in CSV file 169.237.79.75_gk_model0.csv
  
  --------- APM Model Size ------------
  Each time step contains
@@ -590,8 +587,8 @@ Number of inequality constraint evaluations          = 0
 Number of equality constraint Jacobian evaluations   = 61
 Number of inequality constraint Jacobian evaluations = 0
 Number of Lagrangian Hessian evaluations             = 59
-Total CPU secs in IPOPT (w/o function evaluations)   =      0.071
-Total CPU secs in NLP function evaluations           =      0.035
+Total CPU secs in IPOPT (w/o function evaluations)   =      0.072
+Total CPU secs in NLP function evaluations           =      0.034
 
 EXIT: Converged to a point of local infeasibility. Problem may be infeasible.
  
@@ -601,14 +598,19 @@ EXIT: Converged to a point of local infeasibility. Problem may be infeasible.
  
  ---------------------------------------------------
  Solver         :  IPOPT (v3.12)
- Solution time  :   0.131399999983842      sec
+ Solution time  :   0.130799999998999      sec
  Objective      :  -0.140132064876366     
  Unsuccessful with error code            0
  ---------------------------------------------------
  
  Creating file: infeasibilities.txt
  @error: Solution Not Found
-better solution is infeasible up to numeric error
+better solution does not exist 
+
+*****
+Theorem 1.2 t(n_even) <=  0.14013154232 n^2
+*****
+
 Solve REGULAR BOARD UPPER BOUND, for Theorem 1.5 
 
  ----------------------------------------------------------------
@@ -636,23 +638,19 @@ Solve REGULAR BOARD UPPER BOUND, for Theorem 1.5
  ----------------------------------------------
  Steady State Optimization with APOPT Solver
  ----------------------------------------------
-Iter:     1 I:  0 Tm:      0.01 NLPi:   20 Dpth:    0 Lvs:    0 Obj: -1.72E-01 Gap:  0.00E+00
+Iter:     1 I:  0 Tm:      0.07 NLPi:   20 Dpth:    0 Lvs:    0 Obj: -1.72E-01 Gap:  0.00E+00
  Successful solution
  
  ---------------------------------------------------
  Solver         :  APOPT (v1.0)
- Solution time  :   2.129999999306165E-002 sec
+ Solution time  :   0.114699999998265      sec
  Objective      :  -0.171572875253810     
  Successful solution
  ---------------------------------------------------
  
 
 *****
-Theorem 1.5 a(n) <=  0.17157287525 n^2
-*****
-
-*****
-Validating no better solution found....
+Validating better  upper bound is feasible....
 *****
 
  ----------------------------------------------------------------
@@ -680,13 +678,13 @@ Validating no better solution found....
  ----------------------------------------------
  Steady State Optimization with APOPT Solver
  ----------------------------------------------
-Iter:     1 I: -1 Tm:      0.00 NLPi:    1 Dpth:    0 Lvs:    0 Obj:  0.00E+00 Gap:       NaN
+Iter:     1 I: -1 Tm:      0.01 NLPi:    1 Dpth:    0 Lvs:    0 Obj:  0.00E+00 Gap:       NaN
  Warning: no more possible trial points and no integer solution
  Maximum iterations
  
  ---------------------------------------------------
  Solver         :  APOPT (v1.0)
- Solution time  :   1.060000000870787E-002 sec
+ Solution time  :   4.400000000168802E-002 sec
  Objective      :  -0.171572875000000     
  Unsuccessful with error code            0
  ---------------------------------------------------
@@ -694,4 +692,7 @@ Iter:     1 I: -1 Tm:      0.00 NLPi:    1 Dpth:    0 Lvs:    0 Obj:  0.00E+00 G
  Creating file: infeasibilities.txt
  @error: Solution Not Found
 
-better solution is infeasible up to numeric error
+better upper bound beyond numeric error is infeasible
+*****
+Theorem 1.5 a(n) <=  0.17157287525 n^2
+*****
