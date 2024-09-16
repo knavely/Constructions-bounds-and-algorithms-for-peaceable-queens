@@ -14,8 +14,29 @@ Theorem 1.5 (Even Torus Upper Bound) -- regular_board.py
 # Instructions without Docker
 1. install Gekko with> pip install gekko 
 2. verify Theorem 1.2 with > python even_torus.py 
+we should see final lines output:
+
+better upper bound beyond numeric error is infeasible 
+*****
+Theorem 1.2 t(n_even) <=  0.14013154232 n^2
+*****
+
 3. verify Theorem 1.3 with > python odd_torus.py 
+we should see final lines of output:
+
+better upper bound beyond numeric error is infeasible
+*****
+Theorem 1.4 t(n_odd) <=  0.1249968765 n^2
+*****
+
 4. verify Theorem 1.5 with > python regular_board.py
+
+we should see final lines output:
+better upper bound beyond numeric error is infeasible
+*****
+Theorem 1.5 a(n) <=  0.17157287525 n^2
+*****
+
 
 # Instructions using Docker
 You need docker and python installed.
