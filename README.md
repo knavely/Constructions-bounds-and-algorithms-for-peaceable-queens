@@ -11,7 +11,13 @@ Theorem 1.3 (Odd Torus Upper Bound) -- odd_torus.py
 
 Theorem 1.5 (Even Torus Upper Bound) -- regular_board.py
 
-# Instructions
+# Instructions without Docker
+1. install Gekko with> pip install gekko 
+2. verify Theorem 1.2 with > python even_torus.py 
+3. verify Theorem 1.3 with > python odd_torus.py 
+4. verify Theorem 1.5 with > python regular_board.py
+
+# Instructions using Docker
 You need docker and python installed.
 
 1. download peaceablequeens.tar
