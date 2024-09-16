@@ -74,7 +74,7 @@ try:
     m.Equation(z[0] > 0.14014)
     m.solve()
 except:
-    print("better solution does not exist \n")
+    print("better upper bound beyond numeric error is infeasible \n")
     print("*****")
     print("Theorem 1.2 t(n_even) <= ", objective,"n^2") 
     print("*****")
