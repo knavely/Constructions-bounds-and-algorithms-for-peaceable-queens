@@ -38,13 +38,16 @@ objective = z[0][0]
 
 #RD,RA, BD, BA for even
 
+
+m.options.OTOL = 1.0e-6
+m.options.RTOL = 1.0e-6
 print("***** Validating UPPER BOUND *****")
 try:
-    m.Equation(z[0] > 0.1254)
+    m.Equation(z[0] > 0.1250001)
     m.solve()
 except:
     print("better upper bound beyond numeric error is infeasible")
     print("*****")
-    print("Theorem 1.4 t(n_odd) <= ", z[0][0],"n^2")
+    print("Theorem 1.4 t(n_odd) <= ", objective,"n^2")
     print("*****")
     print("")

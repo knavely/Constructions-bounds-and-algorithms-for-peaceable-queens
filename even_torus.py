@@ -68,6 +68,7 @@ m.options.SOLVER=3 #IPOPT
 m.solve()
 
 objective = z[0][0]
+
 print("***** Validating UPPER BOUND *****")
 try:
     m.Equation(z[0] > 0.14014)
@@ -75,6 +76,6 @@ try:
 except:
     print("better solution does not exist \n")
     print("*****")
-    print("Theorem 1.2 t(n_even) <= ", z[0][0],"n^2") 
+    print("Theorem 1.2 t(n_even) <= ", objective,"n^2") 
     print("*****")
     print("")

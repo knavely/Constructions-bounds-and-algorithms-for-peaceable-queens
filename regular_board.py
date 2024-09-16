@@ -61,12 +61,12 @@ print("Validating better  upper bound is feasible....")
 print("*****")
 print("")
 try:
-    m.Equation(z[0] > 0.172)    
+    m.Equation(z[0] > 0.1716)    
     m.solve()
 except:
     print("better upper bound beyond numeric error is infeasible")
     print("*****")
-    print("Theorem 1.5 a(n) <= ", z[0][0],"n^2") 
+    print("Theorem 1.5 a(n) <= ", objective,"n^2") 
     print("*****")
     print("")
 
